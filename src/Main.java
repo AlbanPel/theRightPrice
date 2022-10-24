@@ -12,7 +12,8 @@ public class Main {
         } else if (cat == 1) {
            price = new Random().nextInt(5000, 75000);
         }else {
-           price = new Random().nextInt(90000, 500000);
+           price = new Random().nextInt(90, 500);
+           price = (int) Math.ceil(price * 1000);
         }
         int myPrice = 0;
 
